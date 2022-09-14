@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont;
+  font-size: 16px;
+}
+
+.container{
+  margin: 0 auto;
+}
+
+.search-container{
+  padding: 10px 20px;
+  gap: 15px;
+}
+
+.search-bar{
+  padding: 13px 15px 12px;
+  gap: 5px;
+  width: 335px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  box-shadow: 0px 3px 2px rgb(0 0 0 / 3%);
+  border-radius: 100px;
+}
+
+.card{
+  margin: 0 auto;
+  width: 335px;
+  height: 320px;
+  border: 1px solid #D6D6D6;
+  filter: drop-shadow(2.98404px 3.97872px 3.97872px rgba(0, 0, 0, 0.07));
+  border-radius: 11px;
+  margin-bottom: 53px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 35px 20px 20px;
+  gap: 10px;
+  width: 335px;
+  height: 170px;
+}
+
+img{
+  width: 100%;
+  height: 46.87%;
+  object-fit: cover;
+  border-radius: 11px 11px 0 0;
+}
+
+.title{
+  font-weight: 510;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.caption{
+  font-style: normal; 
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  color: #666666;
+}
+
+.btn{
+  width: 94px;
+  height: 30px;
+  background: #EC4C60;
+  border-radius: 100px;
+  color: #FFFFFF;
+  border: none;
+  display: flex;
+  padding: 0px 15px;
+  width: 94px;
+  font-size: 12px;
+}
+
+.rules, .cancel-change{
+  border: 1px solid ;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.see-more{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
