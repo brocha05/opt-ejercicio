@@ -6,10 +6,17 @@
   font-size: 16px;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 .container{
   margin: 0 auto;
   border-bottom: 1px solid #D6D6D6;
   margin-bottom: 20px;
+  width: 375px;
+  border: 1px solid #D6D6D6;
 }
 
 .first-section{
@@ -19,6 +26,18 @@
 .search-container{
   padding: 10px 20px;
   gap: 15px;
+  margin-bottom: 21px;
+}
+
+input::placeholder{
+  text-align: center;
+  font-weight: 510;
+  font-size: 14px;
+  line-height: 23px;
+  color: #666666;
+  background-image: url("./images/search.png");
+  background-repeat: no-repeat;
+  background-position: 45px;
 }
 
 .search-bar{
@@ -59,6 +78,13 @@
   border-radius: 11px 11px 0 0;
 }
 
+.card-img2{
+  border-radius: 7px 7px 0 0;
+  width: 335px;
+  height: 103px;
+  object-fit: cover;
+}
+
 .title{
   font-weight: 510;
   font-size: 18px;
@@ -81,6 +107,12 @@
   border: none;
   padding: 0px 15px;
   font-size: 12px;
+}
+
+.btn:hover{
+  transform: scale(1.1);
+  transition: 0.4s;
+  cursor: pointer;
 }
 
 .second-section{
@@ -171,6 +203,12 @@
   line-height: 18px;
 }
 
+.btn-secundary:hover{
+  cursor: pointer;
+  background-color: #EC4C60;
+  color: white;
+}
+
 .m-b{
   margin-bottom: 20px;
 }
@@ -188,4 +226,50 @@
   line-height: 16px;
   text-align: right;
   color: #000000;
+}
+
+.right-arrow{
+  cursor: pointer;
+}
+
+.carrousel {
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+.carrousel .grande {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+  transition: all 0.5s ease;
+  transform: translateX(0%);
+}
+
+.carrousel .puntos {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.carrousel .punto {
+  transition: all 0.4s ease;
+  width: 6px;
+  height: 6px;
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  list-style-type:none;
+  position: relative;
+  bottom: 6px;
+}
+.punto::marker{
+  display: hidden;
+}
+
+.carrousel .punto.activo {
+  background: #000000;
 }
