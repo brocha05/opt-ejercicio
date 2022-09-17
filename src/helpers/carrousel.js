@@ -6,7 +6,6 @@ export const btn1 = () => {
       punto[i].classList.remove('activo')
     })
     punto[0].classList.add('activo')
-    console.log("btn-1")
 }
 
 export const btn2 = () => {
@@ -17,7 +16,6 @@ export const btn2 = () => {
       punto[i].classList.remove('activo')
     })
     punto[1].classList.add('activo')
-    console.log("btn-2")
 }
 
 export const btn3 = () => {
@@ -28,5 +26,4 @@ export const btn3 = () => {
       punto[i].classList.remove('activo')
     })
     punto[2].classList.add('activo')
-    console.log("btn-3")
 }

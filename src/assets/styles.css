@@ -6,11 +6,6 @@
   font-size: 16px;
 }
 
-
-html {
-  scroll-behavior: smooth;
-}
-
 .container{
   margin: 0 auto;
   border-bottom: 1px solid #D6D6D6;
@@ -253,6 +248,8 @@ input::placeholder{
   justify-content: center;
   align-items: center;
   gap: 5px;
+  position: relative;
+  bottom: 10px;
 }
 
 .carrousel .punto {
@@ -266,10 +263,107 @@ input::placeholder{
   position: relative;
   bottom: 6px;
 }
-.punto::marker{
-  display: hidden;
-}
 
 .carrousel .punto.activo {
   background: #000000;
 }
+
+@keyframes example {
+  0%   {top: 0;}
+  25%  {top: 200;}
+  50%  {top: 300;}
+  100% {top: 400;}
+}
+
+.options-travel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 15px;
+  position: absolute;
+  width: 375px;
+  height: 449px;
+  top: 517px;
+  bottom: 0px;
+  background-color: green;
+  border-radius: 11px 11px 0 0;
+  background-color: #FFFFFF;
+  display: none;
+  animation-name: example;
+  animation-duration: 1s;
+}
+
+.head{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 38px;
+  width: 335px;
+  height: 44px;
+}
+
+.head h2{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.6px;
+}
+
+.head button:hover{
+  cursor: pointer;
+}
+
+.options{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 0px;
+  gap: 10px;
+  width: 335px;
+  height: 350px;
+}
+
+.opt{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 7px;
+  width: 335px;
+  height: 58px;
+  background: #FFFFFF;
+  border: 1px solid #D6D6D6;
+  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.03);
+  border-radius: 7px;
+}
+
+.opt:hover{
+  cursor: pointer;
+  background-color: #EC4C60;
+  color: white;
+}
+
+.opt h2{
+  font-weight: 510;
+  font-size: 20px;
+  line-height: 18px;
+}
+
+.opt p{
+  font-weight: 274;
+  font-size: 20px;
+  line-height: 18px;
+  color: #0B2343;
+}
+
+.btn-travel{
+  background: rgba(0, 0, 0, 0.1);
+  background-color: #D6D6D6;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px; 
+}
+
